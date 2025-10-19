@@ -1,0 +1,27 @@
+# 🛒 E-Commerce Database Schema
+
+## 📌 Overview
+This repository contains a **PostgreSQL database schema** for a professional e-commerce system.  
+It defines the structure needed to manage users, products, orders, payments, and categories efficiently.
+
+## 🧩 Database Structure
+**Main Tables:**
+- **Users:** Manages customers and administrators.
+- **Categories:** Organizes products into logical groups.
+- **Products:** Stores product data including price, stock, and description.
+- **Orders:** Tracks customer orders and their statuses.
+- **Order_Items:** Links products to specific orders.
+- **Payments:** Records payment transactions and methods.
+
+## 🗄️ Entity Relationship (ER) Logic
+- A **user** can have multiple **orders**.  
+- Each **order** contains several **order items**.  
+- Each **order item** references a **product**.  
+- Each **product** belongs to one **category**.  
+- Each **order** has a related **payment record**.
+
+## ⚙️ How to Use
+1. Install PostgreSQL.  
+2. Create a new database:
+   ```sql
+   CREATE DATABASE ecommerce_db;
